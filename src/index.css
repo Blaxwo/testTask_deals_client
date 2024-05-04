@@ -1,0 +1,18 @@
+@font-face {
+    font-family: Merriweather;
+    src: url('./fronts/Merriweather/Merriweather-Regular.ttf');
+}
+@font-face {
+    font-family: Lato;
+    src: url('./fronts/Lato/Lato-Regular.ttf');
+}
+body{
+    margin: 0;
+    font-family: Merriweather, serif;
+}
+button {
+    font-family: Merriweather, serif;
+}
+input{
+    font-family: Lato, serif;
+}

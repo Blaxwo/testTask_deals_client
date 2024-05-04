@@ -1,0 +1,211 @@
+.home {
+    position: relative;
+
+}
+.changeFont{
+    font-family: Lato, serif;
+}
+.backgroundImage {
+    background-image: url("../../assets/road.png");
+    background-size: cover;
+    background-position: center;
+    height: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 80px;
+}
+.backgroundDealsImage{
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 400px;
+}
+.backgroundImag::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1024px;
+    background-color: rgba(23, 34, 52, 0.5);
+}
+
+.backgroundImage .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 1085px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.backgroundImage .content button{
+    padding: 10px 24px 10px 24px;
+    border: 1px solid white;
+    background: inherit;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    height: 54px;
+}
+
+.heading {
+    font-size: 64px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.subheading {
+    max-width: 822px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.deals{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.cardContainer{
+    max-width: 1300px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.openDeals{
+    font-weight: 700;
+    font-size: 28px;
+    color: rgba(178, 159, 126, 1);
+    margin-left: 4%;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+    height: 400px;
+
+}
+
+.cardInfo{
+    height: 53px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 20px;
+    left: 14px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Lato, serif;
+}
+.cardInfo > :not(:last-child) {
+    margin-right: 100px;
+
+}
+.cardInfo p{
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+}
+
+.cardName{
+    position: absolute;
+    color: white;
+    bottom: 55px;
+    left: 14px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.cardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width:1350px) {
+    .openDeals{
+        margin-left: 11%;
+    }
+}
+@media (max-width:1100px) {
+    .cardInfo > :not(:last-child) {
+        margin-right: 60px;
+    }
+}
+@media (max-width:983px) {
+    .cardInfo > :not(:last-child) {
+        margin-right: 30px;
+    }
+}
+@media (max-width:861px) {
+    .cardName{
+        bottom: 70px;
+    }
+    .cardInfo{
+        bottom: 35px;
+    }
+    .cardInfo p{
+        margin-bottom: 0;
+    }
+    .content{
+        padding: 20px;
+    }
+}
+@media (max-width:711px) {
+    .cardName{
+        bottom: 130px;
+    }
+    .cardInfo{
+        bottom: 95px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+@media (max-width:695px) {
+    .cardName{
+        bottom: 60px;
+    }
+    .cardInfo{
+        bottom: 25px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:450px) {
+    .cardName{
+        bottom: 70px;
+    }
+    .cardInfo{
+        bottom: 35px;
+    }
+    .heading{
+        font-size: 56px;
+    }
+}
+
+@media (max-width:420px) {
+    .heading{
+        font-size: 46px;
+    }
+    .cardName{
+        bottom: 100px;
+    }
+    .cardInfo{
+        bottom: 65px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

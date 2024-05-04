@@ -1,0 +1,38 @@
+.header{
+    width: 100%;
+    display: flex;
+    background:rgba(23, 34, 52, 1);
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    height: 80px;
+}
+.link{
+    padding: 11px 0px 11px 0px;
+    margin-right: 10px;
+    color: white;
+    width: 160px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 1px solid rgba(178, 159, 126, 1);
+}
+.nav{
+    padding: 20px 0 20px 0;
+    margin-right: 70px;
+    display: flex;
+}
+.login, .signOut{
+    color: rgba(178, 159, 126, 1);
+}
+.auth{
+    background-color: rgba(178, 159, 126, 1);
+    color: white;
+}
+@media (max-width:861px) {
+    .nav{
+        margin-right: 0;
+    }
+}
